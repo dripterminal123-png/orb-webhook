@@ -4,8 +4,8 @@ import os
 
 app = Flask(__name__)
 
-API_KEY = os.environ.get("PKLOI7PEDFZYKOOSN574FAPFJ7")
-API_SECRET = os.environ.get("Hc8PJ7YW6jXbu2RewqC5kPJ7iF8fPAS541RxjGsrzKh1")
+API_KEY = os.environ.get("ALPACA_API_KEY")
+API_SECRET = os.environ.get("ALPACA_API_SECRET")
 BASE_URL = os.environ.get("ALPACA_BASE_URL", "https://paper-api.alpaca.markets")
 
 api = tradeapi.REST(API_KEY, API_SECRET, BASE_URL, api_version='v2')
